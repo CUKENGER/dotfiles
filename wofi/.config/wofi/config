@@ -1,0 +1,11 @@
+width=600
+height=400
+location=center
+show=drun
+prompt=Launch
+allow_images=true
+image_size=32
+allow_markup=true
+gtk_dark=true
+layer=overlay
+insensitive=true

@@ -1,0 +1,11 @@
+pane	0	1	1	:*	1	kol-pc	:/home/kol/Desktop/work/8z-back-end	1	docker	:docker logs -f api
+pane	0	2	0	:	1	kol-pc	:/home/kol/Desktop/work/8z-back-end	1	zsh	:
+pane	0	3	0	:-	1	kol-pc	:/home/kol/Desktop/work/8z	1	npm	:npm run dev
+pane	4	1	0	:-	1	kol-pc	:/home/kol/Desktop/delishki/pomodoro-cli	1	nvim	:nvim main.go
+pane	4	2	1	:*	1	kol-pc	:/home/kol/Desktop/delishki/pomodoro-cli	1	./pomodoro	:./pomodoro
+window	0	1	:docker	1	:*	c4fd,189x45,0,0,0	:
+window	0	2	:zsh	0	:	c4fe,189x45,0,0,1	:
+window	0	3	:npm	0	:-	c4ff,189x45,0,0,2	:
+window	4	1	:nvim	0	:-	62af,189x45,0,0,10	:
+window	4	2	:./pomodoro	1	:*	62b0,189x45,0,0,11	:
+state	4	

@@ -1,0 +1,7 @@
+pane	0	1	1	:*	1	kol-pc	:/home/kol/Desktop/delishki/pomodoro-desktop	1	zsh	:
+pane	0	2	0	:-	1	kol-pc	:/home/kol/Desktop/delishki/pomodoro-desktop	1	nvim	:nvim
+pane	1	1	1	:*	1	kol-pc	:/home/kol/Desktop/delishki/pomodoro-desktop	1	npm	:npm run dev
+window	0	1	:zsh	1	:*	c4fd,189x45,0,0,0	:
+window	0	2	:nvim	0	:-	c4fe,189x45,0,0,1	:
+window	1	1	:npm	1	:*	c4ff,189x45,0,0,2	:
+state	0	

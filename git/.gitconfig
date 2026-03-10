@@ -1,0 +1,16 @@
+[user]
+	name = CUKENGER
+	email = andreychuvashov2015@gmail.com
+[core]
+  autocrlf = input
+[color]
+	ui = true
+[credential]
+	helper = store
+	credentialStore = cache
+[init]
+	defaultBranch = main
+[credential "https://repo.telegraphyx.ru"]
+	provider = generic
+[http]
+	sslverify = false

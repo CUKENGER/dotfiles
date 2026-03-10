@@ -1,0 +1,15 @@
+pane	0	1	1	:*	1	kol-pc	:/home/kol/Desktop/work/8z-back-end	1	docker	:docker logs -f api
+pane	0	2	0	:	1	kol-pc	:/home/kol/Desktop/work	1	zsh	:
+pane	0	3	0	:-	1	kol-pc	:/home/kol/Desktop/work/8z	1	npm	:npm run dev
+pane	1	1	1	:*	1	kol-pc	:/home/kol/Desktop/work/rifify/frontend	1	zsh	:
+pane	1	2	0	:-	1	kol-pc	:/home/kol/Desktop/work/rifify/backend	1	zsh	:
+pane	1	2	0	:-	2	kol-pc	:/home/kol/Desktop/work/rifify/frontend	0	zsh	:
+pane	1	2	0	:-	3	kol-pc	:/home/kol/Desktop/work/rifify/data	0	zsh	:
+pane	2	1	1	:*	1	kol-pc	:/home/kol/Desktop/work/rifify/frontend	1	zsh	:
+window	0	1	:docker	1	:*	c4fd,189x45,0,0,0	:
+window	0	2	:zsh	0	:	c4fe,189x45,0,0,1	:
+window	0	3	:npm	0	:-	c4ff,189x45,0,0,2	:
+window	1	1	:[tmux]	1	:*	c500,189x45,0,0,3	:
+window	1	2	:zsh	0	:-	3e16,189x45,0,0{94x45,0,0,5,94x45,95,0[94x22,95,0,6,94x22,95,23,7]}	:
+window	2	1	:zsh	1	:*	c501,189x45,0,0,4	:
+state	1	

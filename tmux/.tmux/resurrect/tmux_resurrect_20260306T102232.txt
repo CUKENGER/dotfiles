@@ -1,0 +1,5 @@
+pane	1	1	1	:*	1	kol-pc	:/home/kol/wireguard	1	zsh	:
+pane	2	1	1	:*	1	kol-pc	:/home/kol	1	ssh	:ssh my-vps
+window	1	1	:zsh	1	:*	c4fe,189x45,0,0,1	:
+window	2	1	:ssh	1	:*	c4ff,189x45,0,0,2	:
+state	1	

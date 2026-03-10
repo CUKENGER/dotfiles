@@ -1,0 +1,7 @@
+pane	0	1	1	:*	1	kol-pc	:/home/kol/Desktop/work/8z-back-end	1	make	:make up_dev
+pane	0	2	0	:-	1	kol-pc	:/home/kol/Desktop/work	1	zsh	:
+pane	0	3	0	:	1	kol-pc	:/home/kol/Desktop/work/8z	1	npm	:npm run dev
+window	0	1	:make	1	:*	c4fd,189x45,0,0,0	:
+window	0	2	:zsh	0	:-	c4fe,189x45,0,0,1	:
+window	0	3	:npm	0	:	c4ff,189x45,0,0,2	:
+state	0	

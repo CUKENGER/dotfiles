@@ -1,0 +1,116 @@
+{
+	"layer": "top",
+	"position": "top",
+	"height": 40,
+	"spacing": 4,
+	"modules-left": [
+		"hyprland/workspaces",
+		"custom/group-info",
+	],
+	"modules-center": [
+		"clock"
+	],
+	"modules-right": [
+		"custom/keyboard",
+		"custom/vpn",
+		"custom/memory",
+		"cpu",
+		"network",
+		"pulseaudio",
+		"custom/mic",
+		"tray"
+	],
+	"tray": {
+		"spacing": 10
+	},
+	"hyprland/workspaces": {
+		"format": "{id}",
+		"disable-scroll": false,
+		"all-outputs": true,
+		"sort-by-number": true,
+		"persistent_workspaces": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": [],
+			"6": [],
+			"7": [],
+			"8": []
+		},
+		"format-icons": {
+			"urgent": "!",
+			"active": "●",
+			"default": "○"
+		}
+	},
+	"custom/keyboard": {
+		"format": "<span font='FontAwesome 10 bold'>{}</span>",
+		"exec": "~/.config/waybar/scripts/kbd_layout.sh",
+		"interval": 1,
+		"return-type": "string"
+	},
+	"clock": {
+		"format": "{:%H:%M}",
+		"tooltip-format": "<big>{:%Y %B %d}</big>",
+		"on-click": "LC_TIME=ru_RU.UTF-8 GTK_THEME=Adwaita-dark gsimplecal"
+	},
+	"network": {
+		"format-wifi": "{essid} ({signalStrength}%)",
+		"format-ethernet": "Ethernet",
+		"format-disconnected": "Disconnected",
+		"tooltip-format": "{ifname}: {ipaddr}/{cidr}"
+	},
+	"pulseaudio": {
+		"format": "{volume}% {icon}",
+		"format-muted": "Muted {icon}",
+		"format-icons": {
+			"default": "󰕾"
+		},
+		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"on-click-right": "pavucontrol",
+		"on-scroll-up": "~/.config/hypr/scripts/volume-control.sh up",
+		"on-scroll-down": "~/.config/hypr/scripts/volume-control.sh down"
+	},
+	"custom/memory": {
+		"exec": "~/.config/waybar/scripts/memory.sh",
+		"interval": 2,
+		"on-click": "exec ~/.config/waybar/scripts/memory_popup.sh"
+	},
+	"cpu": {
+		"format": "CPU {usage}%",
+		"interval": 1,
+		"tooltip": true,
+		"tooltip-format": "CPU usage: {usage}%"
+	},
+	"hyprland/window": {
+		"format": "{title}",
+		"separate-outputs": true
+	},
+	"custom/group-info": {
+		"exec": "~/.config/hypr/scripts/group-info.sh",
+		// "exec": "~/.config/waybar/scripts/group-info-event.sh",
+		"interval": 1,
+		"format": "{text}",
+		"markup": true,
+		"on-click": "hyprctl dispatch changegroupactive",
+		"escape": true,
+    "return-type": "json"
+	},
+	"custom/mic": {
+		"format": "{icon} {percentage}%",
+		"format-muted": "🔇 Muted",
+		"format-icons": {
+			"default": [
+				""
+			]
+		},
+		"exec": "~/.config/waybar/scripts/mic_volume.sh",
+		"interval": 1,
+		"return-type": "json",
+		"on-click": "wpctl set-source-mute @DEFAULT_SOURCE@ toggle",
+		"on-scroll-up": "~/.config/waybar/scripts/mic_volume_control.sh up",
+		"on-scroll-down": "~/.config/waybar/scripts/mic_volume_control.sh down"
+	},
+	"custom/vpn": { "format": "VPN: {}", "exec": "~/.config/waybar/scripts/vpn-status.sh", "interval": 5, "on-click": "~/.config/hypr/scripts/vpn-menu.sh" }
+}

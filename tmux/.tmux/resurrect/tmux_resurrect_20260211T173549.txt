@@ -1,0 +1,7 @@
+pane	1	1	0	:-	1	kol-pc	:/home/kol/Desktop/work/rifify/backend	0	npm	:npm run start:dev
+pane	1	1	0	:-	2	kol-pc	:/home/kol/Desktop/work/rifify/frontend	1	npm	:npm run dev:fullstack
+pane	1	1	0	:-	3	kol-pc	:/home/kol/Desktop/work/rifify/data	0	npm	:npm run start:dev
+pane	1	2	1	:*	1	kol-pc	:/home/kol/Desktop/work/rifify/frontend	1	zsh	:
+window	1	1	:npm	0	:-	8a12,189x45,0,0{94x45,0,0,1,94x45,95,0[94x22,95,0,3,94x22,95,23,4]}	:
+window	1	2	:zsh	1	:*	c4ff,189x45,0,0,2	:
+state	1	
