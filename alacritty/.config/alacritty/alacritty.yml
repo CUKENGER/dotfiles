@@ -1,0 +1,25 @@
+window:
+  opacity: 0.85 # Прозрачность (0.0 - полностью прозрачный, 1.0 - непрозрачный)
+  padding:
+    x: 10
+    y: 10
+  decorations: none # Отключить декорации окна (границы рисует Hyprland)
+
+font:
+  normal:
+    family: JetBrains Mono
+    style: Regular
+  bold:
+    family: JetBrains Mono
+    style: Bold
+  italic:
+    family: JetBrains Mono
+    style: Italic
+  bold_italic:
+    family: JetBrains Mono
+    style: Bold Italic
+  size: 11.0
+env:
+  WINIT_X11_SCALE_FACTOR: "1.0"
+shell:
+  program: /usr/bin/zsh

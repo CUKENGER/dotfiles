@@ -1,3 +1,0 @@
-pane	0	1	1	:*	1	kol-pc	:/home/kol/Desktop/delishki/music-aggregator	1	bat	:bat --style=auto --line-range :500 package.json
-window	0	1	:[tmux]	1	:*	c4fd,189x45,0,0,0	:
-state	0	
