@@ -18,6 +18,7 @@
 		"network",
 		"pulseaudio",
 		"custom/mic",
+		  "battery",
 		"tray"
 	],
 	"tray": {
@@ -112,5 +113,15 @@
 		"on-scroll-up": "~/.config/waybar/scripts/mic_volume_control.sh up",
 		"on-scroll-down": "~/.config/waybar/scripts/mic_volume_control.sh down"
 	},
+	"battery": {
+    "format": "{capacity}% {status}",
+    "tooltip": false,
+ "path": "/sys/class/power_supply/BAT1",
+    "format-icons": {
+        "Discharging": "🔋",
+        "Charging": "⚡",
+        "Full": "✅"
+    }
+},
 	"custom/vpn": { "format": "VPN: {}", "exec": "~/.config/waybar/scripts/vpn-status.sh", "interval": 5, "on-click": "~/.config/hypr/scripts/vpn-menu.sh" }
 }

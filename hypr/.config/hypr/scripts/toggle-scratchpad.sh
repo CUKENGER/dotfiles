@@ -1,12 +1,13 @@
 #!/bin/bash
 ACTIVE_WINDOW=$(hyprctl activewindow -j | jq -r '.address')
-CURRENT_WORKSPACE=$(hyprctl activeworkspace -j | jq -r '.name')
-WINDOW_WORKSPACE=$(hyprctl clients -j | jq -r --arg addr "$ACTIVE_WINDOW" '.[] | select(.address == $addr) | .workspace.name')
+CURRENT_WS=$(hyprctl activeworkspace -j | jq -r '.name')
+WINDOW_WS=$(hyprctl activewindow -j | jq -r '.workspace.name')
 
-if [[ "$WINDOW_WORKSPACE" == "special:scratchpad" ]]; then
-  hyprctl dispatch movetoworkspace "$CURRENT_WORKSPACE"
+if [[ "$WINDOW_WS" == "special:scratchpad" ]]; then
+  # вернуть окно в исходный workspace
+  hyprctl dispatch movetoworkspace "$CURRENT_WS"
 else
-  hyprctl dispatch togglefloating
+  # переместить в scratchpad и показать его
   hyprctl dispatch movetoworkspace special:scratchpad
-	hyprctl dispatch togglespecialworkspace scratchpad
+  hyprctl dispatch togglespecialworkspace scratchpad
 fi
