@@ -61,6 +61,14 @@ window#waybar {
     background: rgba(65, 72, 104, 0.8);
 }
 
+#custom-group-tabs {
+  color: #888;
+}
+
+#custom-group-tabs.active {
+  color: #ffffff;
+}
+
 .modules-left,
 .modules-center,
 .modules-right {
