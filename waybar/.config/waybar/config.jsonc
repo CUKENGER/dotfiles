@@ -12,7 +12,6 @@
 	],
 	"modules-right": [
 		"custom/keyboard",
-		"custom/vpn",
 		"custom/memory",
 		"cpu",
 		"network",
@@ -76,10 +75,10 @@
 	"custom/memory": {
 		"exec": "~/.config/waybar/scripts/memory.sh",
 		"interval": 2,
-		"on-click": "exec ~/.config/waybar/scripts/memory_popup.sh"
+		"on-click": "~/.config/waybar/scripts/memory_popup.sh"
 	},
 	"cpu": {
-		"format": "CPU {usage}%",
+		"format": "<span size='10000'>CPU {usage}%</span>",
 		"interval": 1,
 		"tooltip": true,
 		"tooltip-format": "CPU usage: {usage}%"
@@ -90,12 +89,11 @@
 	},
 	"custom/group-info": {
 		"exec": "~/.config/hypr/scripts/group-info.sh",
-		// "exec": "~/.config/waybar/scripts/group-info-event.sh",
 		"interval": 1,
 		"format": "{text}",
 		"markup": true,
 		"on-click": "hyprctl dispatch changegroupactive",
-		"escape": true,
+		"escape": false,
     "return-type": "json"
 	},
 	"custom/mic": {
@@ -113,12 +111,11 @@
 		"on-scroll-up": "~/.config/waybar/scripts/mic_volume_control.sh up",
 		"on-scroll-down": "~/.config/waybar/scripts/mic_volume_control.sh down"
 	},
-"battery": {
+	"battery": {
     "format": "{capacity}% {icon}",
     "format-charging": "⚡ {capacity}%",
     "format-discharging": "🔋 {capacity}%",
     "format-full": "✅ {capacity}%",
     "tooltip": false
 },
-	"custom/vpn": { "format": "VPN: {}", "exec": "~/.config/waybar/scripts/vpn-status.sh", "interval": 5, "on-click": "~/.config/hypr/scripts/vpn-menu.sh" }
 }

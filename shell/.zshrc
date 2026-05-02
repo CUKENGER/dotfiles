@@ -176,3 +176,4 @@ esac
 # Load Angular CLI autocompletion.
 # source <(ng completion script)
 # ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
+source /usr/share/nvm/init-nvm.sh
